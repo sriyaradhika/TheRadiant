@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>plastic polution in water</title>
+    <style>/*header css*/
+        .divhead {
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+        
+        .logo {
+          width: 7vw;
+          height: 7vw;
+          border-radius: 100%;
+          float: left;
+          margin-top: 1px;
+        }
+        
+        .headerCenter {
+          text-align: center;
+          display: inline;
+        }
+        
+        .headerRight {
+          float: right;
+        }
+        
+        a {
+          padding: 0px 8px 0px 3px;
+          font-size: x-large;
+          text-decoration: none;
+          border-right: 2px rgb(49, 49, 49) solid;
+          color: lime;
+          font-family: cursive;
+        }
+        
+        .endnav {
+          border-right: none;
+        }
+        
+        a:hover {
+          color: limegreen;
+        }
+        
+        .header {
+          background-color: darkgreen;
+          border-radius: 25px;
+          padding-left: 5px;
+        }
+        
+        /*footer css*/
+        .footer {
+          background-color: darkgreen;
+          border-radius: 25px;
+          height: 10vh;
+          padding: 25px 0px 5px 0px;
+        }
+        
+        .footerp {
+          font-size: x-large;
+          color: lime;
+        }
+        
+        .btn {
+          background: #34d997;
+          background-image: -webkit-linear-gradient(top, #34d997, #2ba3b8);
+          background-image: -moz-linear-gradient(top, #34d997, #2ba3b8);
+          background-image: -ms-linear-gradient(top, #34d997, #2ba3b8);
+          background-image: -o-linear-gradient(top, #34d997, #2ba3b8);
+          background-image: linear-gradient(to bottom, #34d997, #2ba3b8);
+          -webkit-border-radius: 28;
+          -moz-border-radius: 28;
+          border-radius: 28px;
+          text-shadow: 1px 1px 3px #d12727;
+          -webkit-box-shadow: 0px 1px 3px #18f5a4;
+          -moz-box-shadow: 0px 1px 3px #18f5a4;
+          box-shadow: 0px 1px 3px #18f5a4;
+          font-family: Georgia;
+          color: #dff7d7;
+          font-size: 23px;
+          padding: 10px 20px 10px 20px;
+          border: solid #2dbda0 2px;
+          text-decoration: none;
+        }
+        
+        .btn:hover {
+          background: #1ba36d;
+          background-image: -webkit-linear-gradient(top, #1ba36d, #1f9aad);
+          background-image: -moz-linear-gradient(top, #1ba36d, #1f9aad);
+          background-image: -ms-linear-gradient(top, #1ba36d, #1f9aad);
+          background-image: -o-linear-gradient(top, #1ba36d, #1f9aad);
+          background-image: linear-gradient(to bottom, #1ba36d, #1f9aad);
+          text-decoration: none;
+        }
+        </style>
+</head>
+
+<body style="background-color: rgb(179, 179, 216);">
+    <center>
+        <div class="header">
+            <img class="logo" src="MAD.jpg" alt="">
+            <div class="divhead">
+                <div class="headerCenter">
+                    <a href="home.html">Home</a>
+                    <a href="land1.html">Land Pollution</a>
+                    <a href="water.html">Water Pollution</a>
+                    <a href="AirPollutionHome.html">Air Pollution</a>
+                    <a href="https://forms.gle/ez2SG8EhfLAYq7Jm8">Volunteer</a>
+                    <a href="">Donate</a>
+                    <a class="endnav" href="about.html">About Us</a>
+                </div>
+                <div class="headerRight">
+                    <a href="dist/signin.html">Sign In</a>
+                    <a href="dist/signup.html">Sign Up</a>
+                    <a class="signout endnav" onclick="signOutUser()" href="">Sign Out</a>
+                </div>
+            </div>
+        </div>
+    </center>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- carousel -->
+    <div id="myCarousel" class="carousel slide my-0.5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
+                aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                class=""></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="pollution 1.jfif" class="d-block w-100" alt="...">
+
+                <div class="container">
+                    <div class="bg-info text-dark bg-opacity-10 carousel-caption">
+                        <h1>Donate to make a change</h1>
+                        <p>$1 dollar will remove 1 pound of trash</p>
+                        <p><a class="btn btn-sm btn-primary" href="/payment/views/home.ejs">Donate Now</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img src="ocean.jfif" class="d-block w-100" alt="...">
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Water Pollution</h1>
+                        <p>Make a Difference</p>
+                        <p><a class="btn btn-sm btn-primary" href="water.html">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="tarek-badr-dpQEOIoxeWg-unsplash.jpg" class="d-block w-100" alt="..." height="500px">
+
+                <div class="container">
+                    <div class="carousel-caption fw-bolder text-dark">
+                        <h1>Help us in this mission</h1>
+                        <p>Volenteer and be part of cleaning the ocean</p>
+                        <p><a href="https://docs.google.com/forms/d/12FygojCMy4G9xGulo1fSqaqkccZs_5n3XgFxa-_rUe8/edit?usp=sharing" class="btn btn-sm btn-primary" > Volenteer Now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Topics -->
+    <div class="container my-4 p-3 bg-light rounded" >
+        <img src="sources-water-pollution-as-freshwater-contamination-causes-explanation-sources-water-pollution-as-freshwater-contamination-198558385.jpg"
+            alt="" width="340px" height="230px" class="float-end rounded">
+        <h2>
+            WHAT ARE THE CAUSES OF WATER POLLUTION?
+        </h2>
+        <p>
+            There are six common causes of water pollution which are as follows:
+        </p>
+        <li>
+            Rapid Urban Development
+        </li>
+        <li>
+            Improper Sewage Disposal
+        </li>
+        <li>
+            Fertilizer Run-Off
+        </li>
+        <li>
+            Oil Spills
+        </li>
+        <li>
+            Chemical Waste Dumping
+        </li>
+        <li>
+            Radioactive Waste Discharge
+        </li>
+    </div>
+
+    <!-- cards -->
+    <div class="container roun my-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img" src="urban.jpeg" alt="">
+
+                    <div class="card-body">
+                        <h4 class="text-danger" style="font-family: 'Shadows Into Light', cursive;">
+                            Rapid Urban Development
+                        </h4>
+                        <p class="card-text">
+                            Anytime there are massive numbers of people conglomerated in one dense
+                            area, a physical disturbance of the land follows. The building of new roads, houses, and
+                            industries affect the cleanliness of the water through the use of detergents, chemicals, and
+                            exhaust emissions. When it rains, these chemicals are washed into the rivers and streams,
+                            and eventually into the drinking water supply.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img" src="disposal.jpeg" alt="">
+
+                    <div class="card-body">
+                        <h4 class="text-danger" style="font-family: 'Shadows Into Light', cursive;">
+                            Improper Sewage Disposal
+                        </h4>
+                        <p class="card-text">
+                            More and more, improper sewage disposal is becoming a major world issue. Every time you
+                            flush, the waste goes somewhere…either to a sewage treatment facility and from there,
+                            remaining sewage is dumped into the oceans.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img" src="fertilizer.jpeg" alt="" height="190px">
+
+                    <div class="card-body">
+                        <h4 class="text-danger" style="font-family: 'Shadows Into Light', cursive;">
+                            Fertilizer Run-Off
+                        </h4>
+                        <p class="card-text">
+                            Between people attempting to keep their yards vibrant green and weed-free, and farmers
+                            coping with the growing population, fertilizers play a large roll in the cause of water
+                            pollution on this planet. The result is dangerous algae blooms which eventually lead to the
+                            extinction of many underwater plants, as well as fish.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img" src="oil.jpeg" alt="">
+
+                    <div class="card-body">
+                        <h4 class="text-danger" style="font-family: 'Shadows Into Light', cursive;">
+                            Oil Spills
+                        </h4>
+                        <p class="card-text">
+                            You might be thinking of big oil spills like that of the Exxon Valdez, but while these types
+                            of oil spills do cause water to become polluted, oil leaks from vehicles and mechanic trades
+                            are another main cause of water pollution. The spilled oil mixes with groundwater and makes
+                            its way into streams and rivers.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img" src="industry.jpeg" alt="">
+
+                    <div class="card-body">
+                        <h4 class="text-danger" style="font-family: 'Shadows Into Light', cursive;">
+                            Chemical Waste Dumping
+                        </h4>
+                        <p class="card-text">
+                            Big factories are notorious for dumping chemicals into the ocean. Highly toxic substances
+                            such as detergents, polychlorinated biphenyls, and lead are discharged into our environment
+                            every day.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img" src="radio.jpeg" alt="">
+
+                    <div class="card-body">
+                        <h4 class="text-danger" style="font-family: 'Shadows Into Light', cursive;">
+                            Radioactive Waste Discharge
+                        </h4>
+                        <p class="card-text">
+                            There are nuclear power plants all around our country, and the government allows
+                            “permissible levels” of radioactive water to be released into the environment every day.
+                            And, while it's permissible-it doesn't mean it's safe. Likewise, accidents have been known
+                            to occur, releasing horribly high amounts of harmful radioactive chemicals to be released
+                            into the air, water, and soil.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <center>
+        <div class="footer">
+            <a class="btn" href="https://forms.gle/Hn3bWVmy1pDBnEMF8">Contact Us</a>
+            <p class="footerp">
+                ©2021 "The Radiant" Team Created By: Vaishnavi, Prerna, Surekha and Sriya
+            </p>
+        </div>
+        <script src="dist/bundle.js"></script>
+    </center>
+</body>
+
+
+
+</html>

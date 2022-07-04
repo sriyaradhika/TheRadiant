@@ -1,0 +1,136 @@
+body {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(https://png.pngtree.com/thumb_back/fh260/back_our/20190628/ourmid/pngtree-beautiful-petal-fitness-weight-loss-shaping-background-material-image_266170.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.div {
+  border-radius: 25px;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(https://img.freepik.com/free-vector/luxury-fresh-rose-petals-are-falling-air_206725-489.jpg);
+  background-size: cover;
+  background-repeat: none;
+  width: 50%;
+}
+
+.divs {
+  display: inline-block;
+  margin: 20px;
+}
+
+img {
+  height: 25vh;
+  width: 15vw;
+  border-radius: 50%;
+}
+
+p {
+  font-size: x-large;
+  color: blue;
+  font-family: cursive;
+}
+
+h1 {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header css*/
+.divhead {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.logo {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 100%;
+  float: left;
+  margin-top: 1px;
+}
+
+.headerCenter {
+  text-align: center;
+  display: inline;
+}
+
+.headerRight {
+  float: right;
+}
+
+a {
+  padding: 0px 8px 0px 3px;
+  font-size: x-large;
+  text-decoration: none;
+  border-right: 2px rgb(49, 49, 49) solid;
+  color: lime;
+  font-family: cursive;
+}
+
+.endnav {
+  border-right: none;
+}
+
+a:hover {
+  color: limegreen;
+}
+
+.header {
+  background-color: darkgreen;
+  border-radius: 25px;
+  padding-left: 5px;
+}
+
+/*footer css*/
+.footer {
+  background-color: darkgreen;
+  border-radius: 25px;
+  height: 10vh;
+  padding: 25px 0px 5px 0px;
+}
+
+.footerp {
+  font-size: x-large;
+  color: lime;
+}
+
+.btn {
+  background: #34d997;
+  background-image: -webkit-linear-gradient(top, #34d997, #2ba3b8);
+  background-image: -moz-linear-gradient(top, #34d997, #2ba3b8);
+  background-image: -ms-linear-gradient(top, #34d997, #2ba3b8);
+  background-image: -o-linear-gradient(top, #34d997, #2ba3b8);
+  background-image: linear-gradient(to bottom, #34d997, #2ba3b8);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 1px 1px 3px #d12727;
+  -webkit-box-shadow: 0px 1px 3px #18f5a4;
+  -moz-box-shadow: 0px 1px 3px #18f5a4;
+  box-shadow: 0px 1px 3px #18f5a4;
+  font-family: Georgia;
+  color: #dff7d7;
+  font-size: 23px;
+  padding: 10px 20px 10px 20px;
+  border: solid #2dbda0 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #1ba36d;
+  background-image: -webkit-linear-gradient(top, #1ba36d, #1f9aad);
+  background-image: -moz-linear-gradient(top, #1ba36d, #1f9aad);
+  background-image: -ms-linear-gradient(top, #1ba36d, #1f9aad);
+  background-image: -o-linear-gradient(top, #1ba36d, #1f9aad);
+  background-image: linear-gradient(to bottom, #1ba36d, #1f9aad);
+  text-decoration: none;
+}

@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>plastic polution in water</title>
+    <style>/*header css*/
+        .divhead {
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+        
+        .logo {
+          width: 7vw;
+          height: 7vw;
+          border-radius: 100%;
+          float: left;
+          margin-top: 1px;
+        }
+        
+        .headerCenter {
+          text-align: center;
+          display: inline;
+        }
+        
+        .headerRight {
+          float: right;
+        }
+        
+        a {
+          padding: 0px 8px 0px 3px;
+          font-size: x-large;
+          text-decoration: none;
+          border-right: 2px rgb(49, 49, 49) solid;
+          color: lime;
+          font-family: cursive;
+        }
+        
+        .endnav {
+          border-right: none;
+        }
+        
+        a:hover {
+          color: limegreen;
+        }
+        
+        .header {
+          background-color: darkgreen;
+          border-radius: 25px;
+          padding-left: 5px;
+        }
+        
+        /*footer css*/
+        .footer {
+          background-color: darkgreen;
+          border-radius: 25px;
+          height: 10vh;
+          padding: 25px 0px 5px 0px;
+        }
+        
+        .footerp {
+          font-size: x-large;
+          color: lime;
+        }
+        
+        .btn {
+          background: #34d997;
+          background-image: -webkit-linear-gradient(top, #34d997, #2ba3b8);
+          background-image: -moz-linear-gradient(top, #34d997, #2ba3b8);
+          background-image: -ms-linear-gradient(top, #34d997, #2ba3b8);
+          background-image: -o-linear-gradient(top, #34d997, #2ba3b8);
+          background-image: linear-gradient(to bottom, #34d997, #2ba3b8);
+          -webkit-border-radius: 28;
+          -moz-border-radius: 28;
+          border-radius: 28px;
+          text-shadow: 1px 1px 3px #d12727;
+          -webkit-box-shadow: 0px 1px 3px #18f5a4;
+          -moz-box-shadow: 0px 1px 3px #18f5a4;
+          box-shadow: 0px 1px 3px #18f5a4;
+          font-family: Georgia;
+          color: #dff7d7;
+          font-size: 23px;
+          padding: 10px 20px 10px 20px;
+          border: solid #2dbda0 2px;
+          text-decoration: none;
+        }
+        
+        .btn:hover {
+          background: #1ba36d;
+          background-image: -webkit-linear-gradient(top, #1ba36d, #1f9aad);
+          background-image: -moz-linear-gradient(top, #1ba36d, #1f9aad);
+          background-image: -ms-linear-gradient(top, #1ba36d, #1f9aad);
+          background-image: -o-linear-gradient(top, #1ba36d, #1f9aad);
+          background-image: linear-gradient(to bottom, #1ba36d, #1f9aad);
+          text-decoration: none;
+        }
+        </style>
+</head>
+
+<body style="background: url(background.png) no-repeat center/cover;">
+    <center>
+        <div class="header">
+            <img class="logo" src="MAD.jpg" alt="">
+            <div class="divhead">
+                <div class="headerCenter">
+                    <a href="home.html">Home</a>
+                    <a href="land1.html">Land Pollution</a>
+                    <a href="water.html">Water Pollution</a>
+                    <a href="AirPollutionHome.html">Air Pollution</a>
+                    <a href="https://forms.gle/ez2SG8EhfLAYq7Jm8">Volunteer</a>
+                    <a href="">Donate</a>
+                    <a class="endnav" href="about.html">About Us</a>
+                </div>
+                <div class="headerRight">
+                    <a href="dist/signin.html">Sign In</a>
+                    <a href="dist/signup.html">Sign Up</a>
+                    <a class="signout endnav" onclick="signOutUser()" href="">Sign Out</a>
+                </div>
+            </div>
+        </div>
+    </center>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- carousel -->
+    <div id="myCarousel" class="carousel slide my-0.5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
+                aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                class=""></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="pollution 1.jfif" class="d-block w-100" alt="...">
+
+                <div class="container">
+                    <div class="bg-info text-dark bg-opacity-10 carousel-caption">
+                        <h1>Donate to make a change</h1>
+                        <p>$1 dollar will remove 1 pound of trash</p>
+                        <p><a class="btn btn-sm btn-primary" href="/payment/views/home.ejs">Donate Now</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img src="ocean.jfif" class="d-block w-100" alt="...">
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Water Pollution</h1>
+                        <p>Make a Difference</p>
+                        <p><a class="btn btn-sm btn-primary" href="water.html">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="tarek-badr-dpQEOIoxeWg-unsplash.jpg" class="d-block w-100" alt="..." height="500px">
+
+                <div class="container">
+                    <div class="carousel-caption fw-bolder text-dark">
+                        <h1>Help us in this mission</h1>
+                        <p>Volenteer and be part of cleaning the ocean</p>
+                        <p><a href="https://docs.google.com/forms/d/12FygojCMy4G9xGulo1fSqaqkccZs_5n3XgFxa-_rUe8/edit?usp=sharing" class="btn btn-sm btn-primary" > Volenteer Now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Topics -->
+    <div class="container my-4 bg-light p-2 text-dark bg-opacity-50">
+        <h2>
+            What's the issue?
+        </h2>
+        <img src="Untitleddesign.png" alt="" class="float-end rounded p-3" width="200px" height="200px">
+        <p>
+            Plastic is a synthetic organic polymer made from petroleum with properties ideally suited for a wide
+            variety
+            of applications including: packaging, building and construction, household and sports equipment,
+            vehicles,
+            electronics and agriculture. Over 300 million tons of plastic are produced every year, half of which is
+            used
+            to create single-use items such as shopping bags, cups and straws. If discarded improperly, plastic
+            waste
+            can harm the environment and biodiversity.
+        </p>
+        <p>
+            At least 14 million tons of plastic end up in the ocean every year. Plastic debris is currently the most
+            abundant type of litter in the ocean, making up 80% of all marine debris found from surface waters to
+            deep-sea sediments. Plastic is found on the shorelines of every continent, with more plastic waste found
+            near popular tourist destinations and densely populated areas. These millions tons of plastic made its
+            own
+            island called "Great Pacific Garbage Patch".
+        </p>
+
+        <p>
+            <img src="des.png" alt="" class="float-start rounded-circle" width="180px" height="160px"
+                style="padding-right: 10px;">
+            The main sources of plastic debris found in the ocean are land-based, coming from urban and stormwater
+            runoff, sewer overflows, littering, inadequate waste disposal and management, industrial activities,
+            tyre abrasion, construction and illegal dumping. Ocean-based plastic pollution originates primarily
+            from the fishing industry, nautical activities and aquaculture.
+        </p>
+        <p>
+            Under the influence of solar UV radiation, wind, currents and other natural factors, plastic breaks down
+            into small particles called microplastics (particles smaller than 5 mm) or nanoplastics (particles
+            smaller than 100 nm). The small size makes them easy for marine life to ingest accidentally.
+        </p>
+        <h2>
+            Impacts
+        </h2>
+        <img src="marine_plastic_pollution_graph-1.png" alt="" width="200px" height="200px" class="float-end rounded"
+            style="padding-left: 10px;">
+        <ul class="p-4">
+            <li>Impacts on marine ecosystems : The most visible impacts of plastic debris are the ingestion, suffocation
+                and entanglement of hundreds of marine species. Marine wildlife such as seabirds, whales, fish and
+                turtles mistake plastic waste for prey; most then die of starvation as their stomachs become filled with
+                plastic. They also suffer from lacerations, infections, reduced ability to swim, and internal injuries.
+                Floating plastics also help transport invasive marine species, thereby threatening marine biodiversity
+                and the food web.
+            </li>
+            <li class="my-3">
+                Impacts on food and human health: Microplastics have been found in tap water, beer, salt and are present
+                in all samples collected in the world's oceans, including the Arctic. Several chemicals used in the
+                production of plastic materials are known to be carcinogenic and to interfere with the body's endocrine
+                system, causing developmental, reproductive, neurological, and immune disorders in both humans and
+                wildlife. Recently, microplastics were found in human placentas but more research is needed to determine
+                if this is a widespread problem. <br>
+                Toxic contaminants also accumulate on the surface of plastic as a result of prolonged exposure to
+                seawater. When marine organisms ingest plastic debris, these contaminants enter their digestive systems,
+                and over time accumulate in the food web. The transfer of contaminants between marine species and humans
+                through consumption of seafood has been identified as a health hazard, and research is ongoing.
+            </li>
+            <li class="my-3">
+                Impacts on tourism: Plastic waste damages the aesthetic value of tourist destinations, leading to
+                decreased income from tourism. It also generates major economic costs related to the cleaning and
+                maintenance of the sites. The build-up of plastic litter on beaches can have a negative impact on a
+                country's economy, wildlife, and the physical and psychological wellbeing of people.
+            </li>
+            <li class="my-3">
+                Impacts on climate change:Plastic production contributes to climate change. If plastic waste is incinerated, it releases carbon dioxide and methane (from landfills) into the atmosphere, thereby increasing emissions.
+            </li>
+        </ul>
+
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <center>
+        <div class="footer">
+            <a class="btn" href="https://forms.gle/Hn3bWVmy1pDBnEMF8">Contact Us</a>
+            <p class="footerp">
+                ©2021 "The Radiant" Team Created By: Vaishnavi, Prerna, Surekha and Sriya
+            </p>
+        </div>
+        <script src="dist/bundle.js"></script>
+    </center>
+</body>
+
+
+
+</html>

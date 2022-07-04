@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+<html> 
+<title>Payment Gateway</title> 
+<body style="text-align: center;"> 
+    <h1>Welcome to Payment Gateway</h1> 
+    <p>Pls click Pay with Card to further proceed</p>
+    <form action="payment" method="POST"> 
+    <script
+        src="//checkout.stripe.com/v2/checkout.js"
+        class="stripe-button"
+        data-key="<%= key %>" 
+        data-amount="7000" 
+        data-currency="USD" 
+        data-name="Donation" 
+        data-description="Make a difference" 
+        data-locale="auto" > 
+        </script> 
+    </form> 
+</body> 
+</html>
